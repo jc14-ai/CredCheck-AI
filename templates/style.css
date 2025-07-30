@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     font-family: "Lora", serif;
     margin: auto;
-    background-color: rgb(138, 62, 62);
+    background-color: rgb(29, 29, 29);
 }
 
 ul{
@@ -19,7 +19,7 @@ ul{
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 70%;
     width: 100%;
@@ -33,11 +33,13 @@ ul{
     border-radius: 0 20px 20px 0;
     flex-direction: column;
     font-weight: 700;
-    font-size: 1.3em;
-    height: 50%;
+    font-size: 1.1em;
+    height: 40%;
     width: 15%;
     list-style-type: none;
     background-color: rgb(217, 217,217);
+    position: fixed;
+    left: 0;
 }
 
 .ai-detector-link{
@@ -49,8 +51,8 @@ ul{
 }
 
 .ai-detector-link:hover{
-    color: white;
-    background-color: rgb(194, 113, 113);
+    color: rgb(217, 217,217);
+    background-color: rgb(75, 75, 75);
 }
 
 #top{
@@ -64,10 +66,27 @@ ul{
 }
 
 .ai-detector-container{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    border-radius: 44px;
+    background-color: rgb(217, 217,217);
 }
 
 .ratings-bar{
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    right: 0;
+    position: fixed;
+    border: 1px solid;
+    height: 40%;
+    width:5%;
+    border-radius: 20px 0 0 10px;
+    background-color: rgb(217, 217,217);
 }
 
