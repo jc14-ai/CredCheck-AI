@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "Lora", serif;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    border: 1px solid;
+}
+
