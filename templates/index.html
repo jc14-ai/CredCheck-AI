@@ -4,30 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Fake News AI Detector</title>
+    <title>Fake News AI</title>
   </head>
   <body>
     <div class="container">
-      <nav>
-        <ul>
-          <li>AI Detector</li>
-          <li>Manual</li>
-          <li>About the tool</li>
-          <li>Reviews</li>
-        </ul>
-      </nav>
+      <ul class="nav-bar">
+        <li class="ai-detector-link" id="top">
+          &nbsp;&nbsp;&nbsp;&nbsp;AI Detector
+        </li>
+        <li class="ai-detector-link">&nbsp;&nbsp;&nbsp;&nbsp;Manual</li>
+        <li class="ai-detector-link">&nbsp;&nbsp;&nbsp;&nbsp;About the tool</li>
+        <li class="ai-detector-link" id="bottom">
+          &nbsp;&nbsp;&nbsp;&nbsp;Reviews
+        </li>
+      </ul>
 
-      <form>
-        <label>FAKE NEWS AI DETECTOR</label>
-        <textarea placeholder="News Heading"></textarea>
-        <textarea placeholder="Hews Body"></textarea>
-        <div>
-          <label></label>
+      <form class="ai-detector-container">
+        <label class="ai-detector-title">FAKE NEWS AI DETECTOR</label>
+        <textarea class="headings-area" placeholder="News Heading"></textarea>
+        <textarea class="body-area" placeholder="Hews Body"></textarea>
+        <div class="result-container">
+          <label class="result-text"></label>
         </div>
-        <button type="submit">Detect</button>
+        <button class="detect-button" type="submit">Detect</button>
       </form>
 
-      <nav>
+      <nav class="ratings-bar">
         <ul>
           <li>Star</li>
           <li>Star</li>
