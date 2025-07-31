@@ -1,14 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
     font-family: "Lora", serif;
     margin: auto;
     background-color: rgb(29, 29, 29);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    height: 800px;
+    width: 100%;
+    color: white;
+    margin: 0;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-green{
+    font-size: 5em;
+    margin: 0;
+}
+
+.title{
+    font-size: 5em;
+    margin: 0;
+    color: rgb(70, 143, 70);
+}
+.sub-title{
+    font-size: 6em;
+    margin:0;
+    color: white;
+}
+
+.title-2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: 300;
+}
+
+.circle-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+.circle-1{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-color: white;
+}
+.circle-2{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.circle-3{
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    background-color: white;
+}
+.circle-4{
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    background-color: white;
+}
+.circle-5{
+    height: 2px;
+    width: 2px;
+    border-radius: 100px;
+    background-color: white;
 }
 
 ul{
@@ -21,9 +101,8 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70%;
-    width: 100%;
-    border: 1px solid;
+    height: 800px;
+    width: 50%;
 }
 
 .nav-bar{
@@ -71,7 +150,7 @@ ul{
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 40%;
+    width: 85%;
     border-radius: 44px;
     background-color: rgb(217, 217,217);
 }
