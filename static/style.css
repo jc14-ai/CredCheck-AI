@@ -220,7 +220,8 @@ ul{
 }
 
 .detect-button:hover{
-    transform: scale(1.05);
+    background-color: rgb(89, 171, 89);
+    /* transform: scale(1.05); */
 }
 
 .ai-detector-title{

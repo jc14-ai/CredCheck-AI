@@ -1,12 +1,20 @@
-import flask
+from flask import Flask, request, render_template, jsonify
 import joblib
 
-def load_model():
-    model = joblib.load('Training/model.pkl')
+app = Flask(__name__)
+model = joblib.load('Training/model.pkl')
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/predict')
+def predict():
+    news =  request.args.get('news')
     
-    print("model returned!")
-    return model
+    prediction = model.predict([news])     
+    
+    return jsonify({'prediction': str(prediction[0])})
 
 if __name__ == '__main__':
-    model = load_model()
-    print('Ready!')
+    app.run(debug=True)

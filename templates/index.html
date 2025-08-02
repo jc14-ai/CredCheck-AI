@@ -3,10 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
     <title>CredCheck AI</title>
   </head>
   <body>
+    <!-- this images should be pass to js, since
+     js cannot understand jinja2 code from pythonn 
+    -->
+    <img
+      id="yellow-star"
+      src="{{url_for('static', filename='src/yellow_star.png')}}"
+      hidden
+    />
+    <img
+      id="black-star"
+      src="{{url_for('static', filename='src/black_star.png')}}"
+      hidden
+    />
+    <!-- this images should be pass to js, since
+     js cannot understand jinja2 code from pythonn 
+    -->
+
     <ul class="nav-bar">
       <li class="ai-detector-link" id="top">&nbsp;&nbsp;&nbsp;&nbsp;ABOUT</li>
       <li class="ai-detector-link">&nbsp;&nbsp;&nbsp;&nbsp;MANUAL</li>
@@ -18,19 +36,39 @@
 
     <ul class="ratings-bar">
       <li class="star-li">
-        <img class="star" id="star-1" src="/src/black_star.png" />
+        <img
+          class="star"
+          id="star-1"
+          src="{{url_for('static',filename='src/black_star.png')}}"
+        />
       </li>
       <li class="star-li">
-        <img class="star" id="star-2" src="/src/black_star.png" />
+        <img
+          class="star"
+          id="star-2"
+          src="{{url_for('static',filename='src/black_star.png')}}"
+        />
       </li>
       <li class="star-li">
-        <img class="star" id="star-3" src="/src/black_star.png" />
+        <img
+          class="star"
+          id="star-3"
+          src="{{url_for('static',filename='src/black_star.png')}}"
+        />
       </li>
       <li class="star-li">
-        <img class="star" id="star-4" src="/src/black_star.png" />
+        <img
+          class="star"
+          id="star-4"
+          src="{{url_for('static',filename='src/black_star.png')}}"
+        />
       </li>
       <li class="star-li">
-        <img class="star" id="star-5" src="/src/black_star.png" />
+        <img
+          class="star"
+          id="star-5"
+          src="{{url_for('static',filename='src/black_star.png')}}"
+        />
       </li>
     </ul>
 
@@ -67,6 +105,6 @@
         <button class="detect-button" type="submit">Check</button>
       </form>
     </div>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static',filename='script.js')}}"></script>
   </body>
 </html>
