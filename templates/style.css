@@ -150,8 +150,8 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    width: 85%;
+    height: 75%;
+    width: 100%;
     border-radius: 44px;
     background-color: rgb(217, 217,217);
 }
@@ -181,3 +181,44 @@ ul{
     align-items: center;
 }
 
+.headings-area{
+    height: 10%;
+    width: 80%;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    resize: none;
+    font: 'montserrat', montserrat;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.body-area{
+    height: 35%;
+    width: 80%;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    resize: none;
+    font: 'montserrat', montserrat;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.detect-button{
+    font-size: 1.4em;
+    font-family: "Lora", serif;
+    border: none;
+    background-color: rgb(78, 147, 78);
+    color:  white;
+    cursor: pointer;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.detect-button:hover{
+    transform: scale(1.05);
+}
