@@ -15,7 +15,6 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid white;
     height: 800px;
     width: 100%;
     color: white;
@@ -53,10 +52,11 @@ header{
 
 .circle-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    height: 300px;
+    height: 200px;
+    gap: 10%;
 }
 
 .circle-1{
@@ -112,13 +112,14 @@ ul{
     border-radius: 0 20px 20px 0;
     flex-direction: column;
     font-weight: 700;
-    font-size: 1.1em;
-    height: 40%;
-    width: 15%;
+    font-size: 0.93em;
+    height: 30%;
+    width: 11%;
     list-style-type: none;
     background-color: rgb(217, 217,217);
     position: fixed;
     left: 0;
+    top: 250px;
 }
 
 .ai-detector-link{
@@ -131,7 +132,7 @@ ul{
 
 .ai-detector-link:hover{
     color: rgb(217, 217,217);
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(78, 147, 78);
 }
 
 #top{
@@ -160,11 +161,12 @@ ul{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    top: 220px;
     right: 0;
     position: fixed;
     border: 1px solid;
     height: 40%;
-    width:5%;
+    width:4%;
     border-radius: 20px 0 0 10px;
     background-color: rgb(217, 217,217);
 }
