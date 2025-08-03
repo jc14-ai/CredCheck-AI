@@ -86,7 +86,15 @@ form.addEventListener('submit', (e)=>{
     })
     .then(res => res.json())
     .then(data => {
-      resultText.textContent = data.prediction.toString();
+      let prediction = data.prediction.toString();
+
+      if(prediction == 'Real'){
+        resultText.textContent = 'The news you provided is reliable.';
+        resultContainer.style.backgroundColor = 'rgb(110, 212, 110)';  
+    }else{
+        resultText.textContent = 'The news you provided is likely false.';
+        resultContainer.style.backgroundColor = 'rgb(213, 86, 86)';
+      }
       resultContainer.style.display = 'flex';
     });
 
