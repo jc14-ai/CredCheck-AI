@@ -75,9 +75,8 @@ const resultText = document.getElementById('result-text');
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
-    
-    let myNews = heading.textContent.toString() + body.textContent.toString();
 
+    let myNews = heading.value.toString() + body.value.toString();
     fetch('/predict', {
         method: 'POST',
         headers:{
