@@ -8,9 +8,10 @@ model = joblib.load('Training/model.pkl')
 def home():
     return render_template('index.html')
 
-@app.route('/predict')
+@app.route('/predict', methods=['POST'])
 def predict():
-    news =  request.args.get('news')
+    data = request.get_json()
+    news = data.get('news','')
     
     prediction = model.predict([news])     
     

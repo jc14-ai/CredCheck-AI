@@ -1,8 +1,8 @@
-star1 = document.getElementById('star-1');
-star2 = document.getElementById('star-2');
-star3 = document.getElementById('star-3');
-star4 = document.getElementById('star-4');
-star5 = document.getElementById('star-5');
+const star1 = document.getElementById('star-1');
+const star2 = document.getElementById('star-2');
+const star3 = document.getElementById('star-3');
+const star4 = document.getElementById('star-4');
+const star5 = document.getElementById('star-5');
 
 yellowStar = document.getElementById('yellow-star');
 blackStar = document.getElementById('black-star');
@@ -65,4 +65,30 @@ star5.addEventListener('mouseleave',() =>{
     star3.src = blackStar.src;
     star4.src = blackStar.src;
     star5.src = blackStar.src;
+});
+
+const form = document.getElementById('form-ai');
+const heading = document.getElementById('headings-area');
+const body = document.getElementById('body-area');
+const resultContainer = document.getElementById('result-container');
+const resultText = document.getElementById('result-text');
+
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    
+    let myNews = heading.textContent.toString() + body.textContent.toString();
+
+    fetch('/predict', {
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({news: myNews})
+    })
+    .then(res => res.json())
+    .then(data => {
+      resultText.textContent = data.prediction.toString();
+      resultContainer.style.display = 'flex';
+    });
+
 });
