@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" /> -->
     <title>CredCheck AI</title>
   </head>
   <body>
@@ -26,11 +26,13 @@
     -->
 
     <ul class="nav-bar">
-      <li class="ai-detector-link" id="top">&nbsp;&nbsp;&nbsp;&nbsp;ABOUT</li>
-      <li class="ai-detector-link">&nbsp;&nbsp;&nbsp;&nbsp;MANUAL</li>
-      <li class="ai-detector-link">&nbsp;&nbsp;&nbsp;&nbsp;AI DETECTOR</li>
+      <li class="ai-detector-link" id="top">
+        &nbsp;&nbsp;&nbsp;&nbsp;AI Detector
+      </li>
+      <li class="ai-detector-link">&nbsp;&nbsp;&nbsp;&nbsp;About</li>
+      <li class="ai-detector-link">&nbsp;&nbsp;&nbsp;&nbsp;Manual</li>
       <li class="ai-detector-link" id="bottom">
-        &nbsp;&nbsp;&nbsp;&nbsp;REVIEWS
+        &nbsp;&nbsp;&nbsp;&nbsp;Download
       </li>
     </ul>
 
@@ -113,6 +115,35 @@
         <button class="detect-button" type="submit">Check</button>
       </form>
     </div>
-    <script src="{{ url_for('static',filename='script.js')}}"></script>
+
+    <h1>An Online News Credibility Detector</h1>
+    <h2>What is CredCheck AI?</h2>
+    <h3>
+      CredCheck AI is a tool used to detect credible and fake news. It aims to
+      stop misinformation spreading across the internet. This tool helps
+      students, employees, researchers, and especially non-tech people to avoid
+      fraud information.
+    </h3>
+
+    <h2>What model is used?</h2>
+    <h3>
+      The model used are Logistic Regression together with Vectorization within
+      a pipeline. Logistic Regression classifies whether the news is fraud or
+      not. Vectorization on the other hand, converts the text into a numerical
+      format where machines understands it.This AI is trained with 40k cleaned
+      data, having 98% accuracy.
+    </h3>
+
+    <h2>How to use CredCheck AI?</h2>
+    <h3>1. Find a news you want to check.</h3>
+    <h3>2. Copy the heading and the body of the news.</h3>
+    <h3>3. Paste them inside the input field.</h3>
+    <h3>4. Click check and wait for the result.</h3>
+
+    <h1>Download App</h1>
+    <h2>Coming Soon.</h2>
+
+    <!-- <script src="{{ url_for('static',filename='script.js')}}"></script> -->
+    <script src="/static/script.js"></script>
   </body>
 </html>
