@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -89,6 +94,11 @@ ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .container{
@@ -246,4 +256,48 @@ ul{
     font-weight: 500;
     font-size: 1.3em;
     color: white;
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    /* border: 1px solid white; */
+    width: 550px;
+    font-family: 'montserrat', montserrat;
+}
+
+.info-title{
+    font-weight: 700;
+}
+
+.info-sub-title{
+    font-weight: 500;
+}
+
+.info{
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.info-step{
+    font-weight: 300;
+    line-height: 2.5;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.app-dl-text{
+    margin-top: 50px;
+    font-family: 'montserrat', montserrat;
+    color: white;
+}
+
+.app-dl-sub-text{
+    margin-bottom: 50px;
+    font-family: 'montserrat', montserrat;
+    color: white;
+    font-weight: 500;
 }
