@@ -154,16 +154,27 @@
     <!-- Footer here. -->
     <footer>
       <ul class="footer-nav">
-        <li>HOME</li>
-        <li>CONTACT</li>
-        <li>SIMPLE PAGE</li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">SIMPLE PAGE</a></li>
       </ul>
       <div class="footer-contacts">
-        <img src="#" />
-        <img src="#" />
-        <img src="#" />
+        <img
+          class="contact"
+          src="{{ url_for('static', filename='src/facebook.png')}}"
+        />
+        <img
+          class="contact"
+          src="{{ url_for('static', filename='src/github.png')}}"
+        />
+        <img
+          class="contact"
+          src="{{ url_for('static', filename='src/linkedin.png')}}"
+        />
       </div>
-      <h3 class="signature">Made by <b>jc14-ai</b></h3>
+      <h3 class="signature">
+        Made by <b style="color: rgb(118, 118, 118)">jc14-ai</b>
+      </h3>
     </footer>
 
     <script src="{{ url_for('static',filename='script.js')}}"></script>
