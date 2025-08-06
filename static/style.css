@@ -384,5 +384,15 @@ footer{
     border-radius: 40px;
     cursor: pointer;
     width: 120px;
+    background-color: rgb(234, 234, 234);
+}
+
+.fl-button:hover{
     background-color: white;
+}
+
+.simple-page-link:hover,
+.contact-link:hover,
+.home-link:hover{
+    font-weight: 500;
 }

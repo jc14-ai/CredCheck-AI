@@ -119,6 +119,11 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault();
 
     let myNews = heading.value.toString() + body.value.toString();
+
+    if (myNews === ""){
+        resultContainer.style.display = 'none';
+        return;
+    }
     fetch('/predict', {
         method: 'POST',
         headers:{
