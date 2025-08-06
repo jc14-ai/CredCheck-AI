@@ -67,6 +67,38 @@ star5.addEventListener('mouseleave',() =>{
     star5.src = blackStar.src;
 });
 
+blackFB = document.getElementById('facebook-black');
+blackGit = document.getElementById('github-black');
+blackLinkedin = document.getElementById('linkedin-black');
+
+whiteFB = document.getElementById('facebook-white');
+whiteGit = document.getElementById('github-white');
+whiteLinkedin = document.getElementById('linkedin-white');
+
+facebook = document.getElementById('facebook');
+github = document.getElementById('github');
+linkedin = document.getElementById('linkedin');
+
+facebook.addEventListener('mouseenter',() => {
+    facebook.src = whiteFB.src;
+});
+github.addEventListener('mouseenter',() => {
+    github.src = whiteGit.src;
+})
+linkedin.addEventListener('mouseenter',() => {
+    linkedin.src = whiteLinkedin.src;
+});
+
+facebook.addEventListener('mouseleave',() => {
+    facebook.src = blackFB.src;
+});
+github.addEventListener('mouseleave',() => {
+    github.src = blackGit.src;
+});
+linkedin.addEventListener('mouseleave',() => {
+    linkedin.src = blackLinkedin.src;
+});
+
 const form = document.getElementById('form-ai');
 const heading = document.getElementById('headings-area');
 const body = document.getElementById('body-area');

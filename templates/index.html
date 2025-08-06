@@ -21,6 +21,42 @@
       src="{{url_for('static', filename='src/black_star.png')}}"
       hidden
     />
+
+    <img
+      id="facebook-white"
+      src="{{url_for('static', filename='src/facebook_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="github-white"
+      src="{{url_for('static', filename='src/github_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="linkedin-white"
+      src="{{url_for('static', filename='src/linkedin_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="facebook-black"
+      src="{{url_for('static', filename='src/facebook.png')}}"
+      hidden
+    />
+
+    <img
+      id="github-black"
+      src="{{url_for('static', filename='src/github.png')}}"
+      hidden
+    />
+
+    <img
+      id="linkedin-black"
+      src="{{url_for('static', filename='src/linkedin.png')}}"
+      hidden
+    />
     <!-- this images should be pass to js, since
      js cannot understand jinja2 code from pythonn 
     -->
@@ -160,14 +196,17 @@
       </ul>
       <div class="footer-contacts">
         <img
+          id="facebook"
           class="contact"
           src="{{ url_for('static', filename='src/facebook.png')}}"
         />
         <img
+          id="github"
           class="contact"
           src="{{ url_for('static', filename='src/github.png')}}"
         />
         <img
+          id="linkedin"
           class="contact"
           src="{{ url_for('static', filename='src/linkedin.png')}}"
         />
