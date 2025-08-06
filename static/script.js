@@ -67,6 +67,16 @@ star5.addEventListener('mouseleave',() =>{
     star5.src = blackStar.src;
 });
 
+
+const floatingWindow = document.getElementById('floating-window');
+const stars =  [star1,star2,star3,star4,star5];
+
+for(let i = 0; i < stars.length; i++){
+    stars[i].addEventListener('click',()=>{
+        floatingWindow.style.display = 'flex';
+    });
+}
+
 blackFB = document.getElementById('facebook-black');
 blackGit = document.getElementById('github-black');
 blackLinkedin = document.getElementById('linkedin-black');
