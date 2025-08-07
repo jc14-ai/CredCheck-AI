@@ -7,6 +7,109 @@
     <title>Contact - CredCheck AI</title>
   </head>
   <body>
+    <header class="contact-header">
+      <h1 class="h1-title">
+        <div class="head-circ"></div>
+        &nbsp;Cred
+        <h1 style="color: rgb(70, 143, 70)">Check</h1>
+        <h1 style="color: white">&nbsp;AI</h1>
+      </h1>
+    </header>
+
+    <!-- this images should be pass to js, since
+     js cannot understand jinja2 code from pythonn 
+    -->
+
+    <img
+      id="facebook-white"
+      src="{{url_for('static', filename='src/facebook_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="github-white"
+      src="{{url_for('static', filename='src/github_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="linkedin-white"
+      src="{{url_for('static', filename='src/linkedin_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="facebook-black"
+      src="{{url_for('static', filename='src/facebook.png')}}"
+      hidden
+    />
+
+    <img
+      id="github-black"
+      src="{{url_for('static', filename='src/github.png')}}"
+      hidden
+    />
+
+    <img
+      id="linkedin-black"
+      src="{{url_for('static', filename='src/linkedin.png')}}"
+      hidden
+    /><img
+      id="facebook-white"
+      src="{{url_for('static', filename='src/facebook_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="github-white"
+      src="{{url_for('static', filename='src/github_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="linkedin-white"
+      src="{{url_for('static', filename='src/linkedin_white.png')}}"
+      hidden
+    />
+
+    <img
+      id="facebook-black"
+      src="{{url_for('static', filename='src/facebook.png')}}"
+      hidden
+    />
+
+    <img
+      id="github-black"
+      src="{{url_for('static', filename='src/github.png')}}"
+      hidden
+    />
+
+    <img
+      id="linkedin-black"
+      src="{{url_for('static', filename='src/linkedin.png')}}"
+      hidden
+    />
+    <!-- this images should be pass to js, since
+     js cannot understand jinja2 code from pythonn 
+    -->
+
+    <main class="contact-main">
+      <h1 class="h1-contact">Contact</h1>
+      <h3 class="mess-contact">
+        If you have any questions, please contact us on either of the following
+        methods.
+      </h3>
+      <h3 class="soc-contact">Email: support@credcheck.ai</h3>
+      <h3 class="soc-contact">
+        Facebook:
+        <a href="#" style="font-weight: 700">facebook.com/credcheckAI</a>
+      </h3>
+      <h3 class="soc-contact">
+        Instagram:
+        <a href="#" style="font-weight: 700">instagram.com/credcheckAI</a>
+      </h3>
+    </main>
+
     <footer>
       <ul class="footer-nav">
         <li>
@@ -28,13 +131,13 @@
         >
           <img
             class="contact"
-            id="facebook"
+            id="facebook-cont"
             src="{{ url_for('static', filename='src/facebook.png')}}"
           />
         </a>
         <a class="links" href="https://github.com/jc14-ai">
           <img
-            id="github"
+            id="github-cont"
             class="contact"
             src="{{ url_for('static', filename='src/github.png')}}"
           />
@@ -44,7 +147,7 @@
           href="https://www.linkedin.com/in/jestaly-a-castillo-a738b1326/"
         >
           <img
-            id="linkedin"
+            id="linkedin-cont"
             class="contact"
             src="{{ url_for('static', filename='src/linkedin.png')}}"
           />
@@ -54,5 +157,6 @@
         Made by <b style="color: rgb(118, 118, 118)">jc14-ai</b>
       </h3>
     </footer>
+    <script src="{{ url_for('static',filename='contact.js')}}"></script>
   </body>
 </html>
