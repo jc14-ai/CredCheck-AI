@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+    <title>Detector - CredCheck AI</title>
+  </head>
+  <body>
+    <footer>
+      <ul class="footer-nav">
+        <li>
+          <a href="{{url_for('home')}}" class="home-link">HOME</a>
+        </li>
+        <li>
+          <a href="{{url_for('contact')}}" class="contact-link">CONTACT</a>
+        </li>
+        <li>
+          <a href="{{url_for('detector')}}" class="simple-page-link"
+            >SIMPLE PAGE</a
+          >
+        </li>
+      </ul>
+      <div class="footer-contacts">
+        <a
+          class="links"
+          href="https://web.facebook.com/jestalyjoseph.castillo.7"
+        >
+          <img
+            class="contact"
+            id="facebook"
+            src="{{ url_for('static', filename='src/facebook.png')}}"
+          />
+        </a>
+        <a class="links" href="https://github.com/jc14-ai">
+          <img
+            id="github"
+            class="contact"
+            src="{{ url_for('static', filename='src/github.png')}}"
+          />
+        </a>
+        <a
+          class="links"
+          href="https://www.linkedin.com/in/jestaly-a-castillo-a738b1326/"
+        >
+          <img
+            id="linkedin"
+            class="contact"
+            src="{{ url_for('static', filename='src/linkedin.png')}}"
+          />
+        </a>
+      </div>
+      <h3 class="signature">
+        Made by <b style="color: rgb(118, 118, 118)">jc14-ai</b>
+      </h3>
+    </footer>
+  </body>
+</html>

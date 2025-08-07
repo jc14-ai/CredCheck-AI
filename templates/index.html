@@ -202,15 +202,17 @@
     <!-- Footer here. -->
     <footer>
       <ul class="footer-nav">
-        <li><a href="#" class="home-link">HOME</a></li>
         <li>
-          <a
-            href="{{url_for('static',filename='contact.html')}}"
-            class="contact-link"
-            >CONTACT</a
+          <a href="{{url_for('home')}}" class="home-link">HOME</a>
+        </li>
+        <li>
+          <a href="{{url_for('contact')}}" class="contact-link">CONTACT</a>
+        </li>
+        <li>
+          <a href="{{url_for('detector')}}" class="simple-page-link"
+            >SIMPLE PAGE</a
           >
         </li>
-        <li><a href="#" class="simple-page-link">SIMPLE PAGE</a></li>
       </ul>
       <div class="footer-contacts">
         <a
