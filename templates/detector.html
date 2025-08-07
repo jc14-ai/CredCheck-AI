@@ -6,5 +6,31 @@
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
     <title>Detector - CredCheck AI</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form class="ai-detector-container" id="form-ai">
+        <span>
+          <label class="ai-detector-title">News Credibility </label>
+          <label class="ai-detector-title" style="color: rgb(70, 143, 70)"
+            >Checker</label
+          >
+        </span>
+        <textarea
+          class="headings-area"
+          id="headings-area"
+          placeholder="News Heading"
+        ></textarea>
+        <textarea
+          class="body-area"
+          id="body-area"
+          placeholder="News Body"
+        ></textarea>
+        <div class="result-container" id="result-container">
+          <label class="result-text" id="result-text">result here.</label>
+        </div>
+        <button class="detect-button" type="submit">Check</button>
+      </form>
+    </div>
+  </body>
+  <script src="{{url_for('static', filename='detector.js')}}"></script>
 </html>
