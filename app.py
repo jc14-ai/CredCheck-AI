@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, jsonify
 from flask_cors import CORS
-#import joblib
-import pickle
+import joblib
+# import pickle
 import os
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ CORS(app)
 model_path = os.path.join('Training','model.pkl')
 
 f = open(model_path, 'rb')
-model = pickle.load(f)
+model = joblib.load(f)
 f.close()
 
 # model = joblib.load('Training/model.pkl')
