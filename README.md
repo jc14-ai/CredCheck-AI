@@ -31,7 +31,12 @@ A web application tool to stop and lessen misinformation. After receiving a fake
 
    ```bash
    pip install -r requirements.txt
+6. Run the App.
+
+   ```bash
+   python app.py
 
 ## Found a bug?
 Kindly report it in the <b>Discussion</b> section of this repository.
+
 
